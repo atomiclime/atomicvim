@@ -1,6 +1,6 @@
 # Atomic vim
 I wanted a simple way to use my vim setup on multiple computers.
-Well, this is the result! 
+Well, this is the result!
 
 ## .vimrc
 ```
