@@ -107,9 +107,15 @@ set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 " MBP touchbar esc
 inoremap jj <esc>
 
-nnoremap <C-b> :buffers<CR>:buffer<Space>
-
 let mapleader = ","
+
+" Buffers
+nnoremap <leader>n :bn<cr>
+nnoremap <leader>p :bp<cr>
+nnoremap <leader>d :bd<cr>
+
+" Toggle whitespace
+nnoremap <leader>w :set list!<cr>
 
 " }}}
 
