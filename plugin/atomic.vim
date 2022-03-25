@@ -12,6 +12,8 @@
 "
 " Default settings for my vim
 
+" SETTINGS {{{
+
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
@@ -93,3 +95,31 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 " Still unshure if I like it or not as default.
 "set list
+
+" }}}
+
+" MAPPINGS {{{
+
+" nnoremap – Allows you to map keys in normal mode.
+" inoremap – Allows you to map keys in insert mode.
+" vnoremap – Allows you to map keys in visual mode.
+
+" MBP touchbar esc
+inoremap jj <esc>
+
+nnoremap <C-b> :buffers<CR>:buffer<Space>
+
+let mapleader = ","
+
+" }}}
+
+" VIMSCRIPT {{{
+
+" This will enable code folding.
+" Use the marker method of folding.
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
+
+" }}}
