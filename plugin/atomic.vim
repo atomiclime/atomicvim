@@ -99,6 +99,9 @@ set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 " Activate mouse support
 set mouse=a
 
+" Always show the tabline
+set showtabline=2
+
 " }}}
 
 " MAPPINGS {{{
@@ -134,6 +137,10 @@ nnoremap <C-f> :NERDTreeFind<CR>
 " Nerdtree
 " Open files in a new tab
 let NERDTreeCustomOpenArgs={'file':{'where': 't'}}
+
+" Show hidden files
+let NERDTreeShowHidden=1
+
 
 " set vim theme
 set t_Co=256   " This is may or may not needed.
