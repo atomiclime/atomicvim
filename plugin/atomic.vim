@@ -96,6 +96,9 @@ set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 " Still unshure if I like it or not as default.
 "set list
 
+" Activate mouse support
+set mouse=a
+
 " }}}
 
 " MAPPINGS {{{
@@ -116,6 +119,29 @@ nnoremap <leader>d :bd<cr>
 
 " Toggle whitespace
 nnoremap <leader>w :set list!<cr>
+
+
+" Nerdtree mappings
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+" }}}
+
+" PLUGIN SETTINGS {{{
+
+" Nerdtree
+" Open files in a new tab
+let NERDTreeCustomOpenArgs={'file':{'where': 't'}}
+
+" set vim theme
+set t_Co=256   " This is may or may not needed.
+set background=light
+colorscheme PaperColor
+
+" Airline theme
+let g:airline_theme='papercolor'
 
 " }}}
 

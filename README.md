@@ -5,13 +5,14 @@ Well, this is the result!
 ## .vimrc
 ```
 call plug#begin('~/.vim/plugged')
+" DO NOT REMOVE {{{
 Plug 'atomiclime/atomicvim'
-Plug 'sickill/vim-monokai'
-Plug 'bling/vim-bufferline'
-Plug 'kien/ctrlp.vim'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'airblade/vim-gitgutter'
+Plug 'preservim/nerdtree'
+" }}}
+
+Plug 'kien/ctrlp.vim'
 call plug#end()
-colorscheme monokai
 ```
