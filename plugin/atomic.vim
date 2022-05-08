@@ -97,7 +97,7 @@ set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 "set list
 
 " Activate mouse support
-set mouse=v
+set mouse=a
 
 " Always show the tabline
 set showtabline=2
