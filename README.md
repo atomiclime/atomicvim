@@ -15,12 +15,32 @@ https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
 " DO NOT REMOVE {{{
 Plug 'atomiclime/atomicvim'
-Plug 'NLKNguyen/papercolor-theme'
+Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
 " }}}
-
+ 
 Plug 'kien/ctrlp.vim'
 call plug#end()
+
+" PLUGIN SETTINGS {{{
+
+" Nerdtree
+" Open files in a new tab
+let NERDTreeCustomOpenArgs={'file':{'where': 't'}}
+
+" Show hidden files
+let NERDTreeShowHidden=1
+
+
+" set vim theme
+set t_Co=256   " This is may or may not needed.
+set background=dark
+colorscheme gruvbox
+
+" Airline theme
+let g:airline_theme='gruvbox'
+
+" }}}
 ```

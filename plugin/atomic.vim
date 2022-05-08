@@ -132,26 +132,6 @@ nnoremap <C-f> :NERDTreeFind<CR>
 
 " }}}
 
-" PLUGIN SETTINGS {{{
-
-" Nerdtree
-" Open files in a new tab
-let NERDTreeCustomOpenArgs={'file':{'where': 't'}}
-
-" Show hidden files
-let NERDTreeShowHidden=1
-
-
-" set vim theme
-set t_Co=256   " This is may or may not needed.
-set background=light
-colorscheme PaperColor
-
-" Airline theme
-let g:airline_theme='papercolor'
-
-" }}}
-
 " VIMSCRIPT {{{
 
 " This will enable code folding.
